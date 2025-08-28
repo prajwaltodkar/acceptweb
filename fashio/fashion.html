@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="fashion.css" />
+    <title>Product Filter</title>
+</head>
+
+<body>
+
+    <!-- Price Filter -->
+    <section class="section-p1">
+        <h2>Filter by Price</h2>
+        <label for="priceFilter">Select price range:</label>
+        <select id="priceFilter">
+      <option value="all">All</option>
+      <option value="0-1499">Below ₹1500</option>
+      <option value="1500-2999">₹1500 - ₹2999</option>
+      <option value="3000-9999">Above ₹3000</option>
+    </select>
+        <button onclick="filterByPrice()">Search</button>
+    </section>
+
+    <!-- Men's Fashions -->
+    <section id="product1" class="section-p1">
+        <h1>Men's Fashions</h1>
+        <div class="pro-container">
+            <div class="pro" data-price="1499">
+                <a href="./productDetail/products.html?id=1">
+                    <img src="img/f1.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>Vestirio</span>
+                        <h5>Hancock Men's Slim Fit Plane Black Formal Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-1499</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="pro" data-price="1299">
+                <a href="./productDetail/products.html?id=2">
+                    <img src="img/f2.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>Vestirio</span>
+                        <h5>Hancock Men's Slim Fit Plane Grey Formal Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-1299</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="pro" data-price="2399">
+                <a href="./productDetail/products.html?id=3">
+                    <img src="img/f3.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>5TH ANFOLD</span>
+                        <h5>Men's Solid Formal Light Blue Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-2399</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="pro" data-price="1299">
+                <a href="./productDetail/products.html?id=4">
+                    <img src="img/f4.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>5TH ANFOLD</span>
+                        <h5>Men's Casual Royal Blue Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-1299</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </a>
+            </div>
+        </div>
+
+        <!-- Women's Fashions -->
+        <section id="product1" class="section-p1">
+            <h1>Women's Fashions</h1>
+            <div class="pro-container">
+                <div class="pro" data-price="1399">
+                    <a href="./productDetail/products.html?id=01">
+                        <img src="img/ff1.jpg" alt="" height="460" />
+                        <a href="#"></a>
+                        <div class="des">
+                            <span>BIBA</span>
+                            <h5>Trendy Women's Yellow Kurti</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>price-1399</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro" data-price="1455">
+                    <a href="./productDetail/products.html?id=02">
+                        <img src="img/ff2.jpg" alt="" height="460" />
+                        <a href="#"></a>
+                        <div class="des">
+                            <span>ZARA</span>
+                            <h5>Trendy Women's Brown Short Kurti</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>price-1455</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro" data-price="3999">
+                    <a href="./productDetail/products.html?id=03">
+                        <img src="img/ff3.jpg" alt="" />
+                        <a href="#"></a>
+                        <div class="des">
+                            <span>W For Woman</span>
+                            <h5>Light Green V Neck Kurti</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>price-3999</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro" data-price="3999">
+                    <a href="./productDetail/products.html?id=04">
+                        <img src="img/ff4.jpg" alt="" />
+                        <a href="#"></a>
+                        <div class="des">
+                            <span>ZARA</span>
+                            <h5>Women's Light Sky Blue Kurti Set</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>price-5999</h4>
+                        </div>
+                        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Script -->
+        <script>
+            function filterByPrice() {
+                const selectedRange = document.getElementById("priceFilter").value;
+                const allProducts = document.querySelectorAll(".pro");
+
+                allProducts.forEach(product => {
+                    const price = parseInt(product.getAttribute("data-price"));
+                    let show = false;
+
+                    if (selectedRange === "all") {
+                        show = true;
+                    } else {
+                        const [min, max] = selectedRange.split("-").map(Number);
+                        show = price >= min && price <= max;
+                    }
+
+                    product.style.display = show ? "block" : "none";
+                });
+            }
+        </script>
+
+</body>
+
+</html>

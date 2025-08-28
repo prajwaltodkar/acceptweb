@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="furniture.css" />
+    <title>Product Filter</title>
+</head>
+
+<body>
+    <!-- Price Filter -->
+    <section class="section-p1">
+        <h2>Filter by Price</h2>
+        <label for="priceFilter">Select price range:</label>
+        <select id="priceFilter">
+  <option value="all">All</option>
+  <option value="0-12999">Below ₹13000</option>
+  <option value="13000-26000">₹13000 - ₹26000</option>
+  <option value="75000-90000">Above ₹75000</option>
+</select>
+        <button onclick="filterByPrice()">Search</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h1>Beautiful Home & Furnitures</h1>
+        <a href="./productDetail/products.html?id=1">
+            <!-- <p>Summer Collection New Morden Design</p> -->
+            <div class="pro-container">
+                <div class="pro" data-price="13349">
+                    <img src="img/hf1.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>M H Wooden</span>
+                        <h5>Shell Motif Luxury Design Lounge Chair</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-13349</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </a>
+        </div>
+        <div class="pro" data-price="2599">
+            <a href="./productDetail/products.html?id=2 ">
+                <img src="img/hf2.jpg " alt=" " />
+                <a href="# "></a>
+                <div class="des ">
+                    <span>Nilkamal</span>
+                    <h5>Nilkamal Freedom Mini 09 Shoe Rack</h5>
+                    <div class="star ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <h4>price-2599</h4>
+                </div>
+                <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="7199">
+            <a href="./productDetail/products.html?id=3 ">
+                <img src="img/hf3.jpg " alt=" " />
+                <a href="# "></a>
+                <div class="des ">
+                    <span>DeckUp</span>
+                    <h5>Engineered Wood study Table</h5>
+                    <div class="star ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <h4>price-7199</h4>
+                </div>
+                <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="3999">
+            <a href="./productDetail/products.html?id=4 ">
+                <img src="img/hf4.jpg " alt=" " />
+                <a href="# "></a>
+                <div class="des ">
+                    <span>DeckUp</span>
+                    <h5>2 Door Engineered Shoe Rack</h5>
+                    <div class="star ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <h4>price-3999</h4>
+                </div>
+                <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+            </a>
+        </div>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <a href=" ./productDetail/products.html?id=01 ">
+            <!-- <p>Summer Collection New Morden Design</p> -->
+            <div class="pro-container ">
+                <div class="pro" data-price="15999">
+                    <img src="img/hf5.jpg " alt=" " />
+                    <a href="# "></a>
+                    <div class="des">
+                        <span>M H Wooden</span>
+                        <h5>Wing Back Cushion Chair</h5>
+                        <div class="star ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                        <h4>price-15999</h4>
+                    </div>
+                    <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+        </a>
+        </div>
+        <div class="pro" data-price="6799">
+            <a href="./productDetail/products.html?id=02 ">
+                <img src="img/hf6.jpg " alt=" " />
+                <a href="# "></a>
+                <div class="des ">
+                    <span>DeckUp</span>
+                    <h5>4 Door Engineered Shoe Rack</h5>
+                    <div class="star ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <h4>price-6799</h4>
+                </div>
+                <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="25219">
+            <a href="./productDetail/products.html?id=03 ">
+                <img src="img/hf7.jpg " alt=" " />
+                <a href="# "></a>
+                <div class="des ">
+                    <span>DecorNation</span>
+                    <h5>Italiana 6 Seater Dining Table</h5>
+                    <div class="star ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <h4>price-25219</h4>
+                </div>
+                <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="80400">
+            <a href="./productDetail/products.html?id=04 ">
+                <img src="img/hf8.jpg " alt=" " />
+                <a href="# "></a>
+                <div class="des ">
+                    <span>DuoFlex Bravo</span>
+                    <h5>Ergonomic Chair</h5>
+                    <div class="star ">
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <h4>price-80400</h4>
+                </div>
+                <a href="# "><i class="fal fa-shopping-cart cart "></i></a>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Filter Script -->
+    <script>
+        function filterByPrice() {
+            const selectedRange = document.getElementById("priceFilter").value;
+            const allProducts = document.querySelectorAll(".pro");
+
+            allProducts.forEach(product => {
+                const price = parseInt(product.getAttribute("data-price"));
+                let show = false;
+
+                if (selectedRange === "all") {
+                    show = true;
+                } else {
+                    const [min, max] = selectedRange.split("-").map(Number);
+                    show = price >= min && price <= max;
+                }
+
+                product.style.display = show ? "block" : "none ";
+            });
+        }
+    </script>
+
+</body>
+
+</html>

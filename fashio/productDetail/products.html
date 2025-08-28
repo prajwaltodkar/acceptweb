@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        a {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .product-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .product-image {
+            max-width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            max-width: 500px;
+        }
+        
+        .product-info h2 {
+            margin-top: 0;
+        }
+        
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #d32f2f;
+        }
+        
+        .rating {
+            color: #388e3c;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .button-container {
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 12px 25px;
+            margin-right: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .add-to-cart {
+            background-color: #fb641b;
+            color: white;
+        }
+        
+        .buy-now {
+            background-color: #0caa4b;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="../fashion.html">← Back to Home</a>
+
+    <div id="product-details">
+        <h2>Loading product...</h2>
+    </div>
+
+    <script>
+        const products = [{
+            id: "1",
+            name: "Hancock Men's Slim Fit Plane Formal Black Shirt ",
+            imageUrl: "img/f1.jpg",
+            price: 1499,
+            description: "Stylish and comfortable shirt for a trendy look.",
+        }, {
+            id: "2",
+            name: "Hancock Men's Slim Fit Plane Formal Grey Shirt",
+            imageUrl: "img/f2.jpg",
+            price: 1299,
+            description: "Classy and Good For Official Look",
+        }, {
+            id: "3",
+            name: "Men's Solid Formal Light Blue Shirt",
+            imageUrl: "img/f3.jpg",
+            price: 2399,
+            description: "Comfortable and Perfect For a Formal Look",
+        }, {
+            id: "4",
+            name: "Men's Casual Royal Blue Shirt",
+            imageUrl: "img/f4.jpg",
+            price: 1299,
+            description: "Stylish and Good for Trendy Look",
+        }, {
+            id: "01",
+            name: "Trendy Women's Yellow Kurti",
+            imageUrl: "img/ff1.jpg",
+            price: 1399,
+            description: "Casual and Comfortable Kurti For Women",
+        }, {
+            id: "02",
+            name: "Trendy Women's Brown Short Kurti",
+            imageUrl: "img/ff2.jpg",
+            price: 1455,
+            description: "Good and Comfortable for a trendy look",
+        }, {
+            id: "03",
+            name: "Light Green V Neck Kurti",
+            imageUrl: "img/ff3.jpg",
+            price: 3999,
+            description: "Stylish and comfortable Kurti Set for a trendy look",
+        }, {
+            id: "04",
+            name: "Women's Light Sky Blue Kurti Set",
+            imageUrl: "img/ff4.jpg",
+            price: 5999,
+            description: "Casual and Comfortable for a Official look",
+        }, ];
+
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get("id");
+
+        const product = products.find((p) => p.id === productId);
+        const productDiv = document.getElementById("product-details");
+
+        if (product) {
+            productDiv.innerHTML = `
+    <div class="product-container">
+      <img class="product-image" src="../${product.imageUrl}" alt="${product.name}" />
+      <div class="product-info">
+        <h2>${product.name}</h2>
+        <div class="price">₹${product.price}</div>
+        ${
+          product.rating
+            ? `<div class="rating">⭐⭐⭐⭐⭐ ${product.rating} / 5 (${product.reviews?.toLocaleString()} reviews)</div>`
+            : ""
+        }
+        <p>${product.description}</p>
+        <div class="button-container">
+          <button class="add-to-cart" onclick="alert('Added to cart!')">🛒 Add to Cart</button>
+          <button class="buy-now" onclick="alert('Proceeding to buy!')">⚡ Buy Now</button>
+        </div>
+      </div>
+    </div>
+  `;
+} else {
+  productDiv.innerHTML = "<p>Product not found.</p>";
+}
+    </script>
+
+</body>
+
+</html>

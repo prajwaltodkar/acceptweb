@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="jewellery.css" />
+    <title>Product Filter</title>
+</head>
+
+<body>
+    <!-- Price Filter -->
+    <section class="section-p1">
+        <h2>Filter by Price</h2>
+        <label for="priceFilter">Select price range:</label>
+        <select id="priceFilter">
+<option value="all">All</option>
+<option value="0-599">Below ₹600</option>
+<option value="600-1000">₹6000 - ₹1000</option>
+<option value="18000-20000">Above ₹18000</option>
+</select>
+        <button onclick="filterByPrice()">Search</button>
+    </section>
+
+    <!-- <p>Summer Collection New Morden Design</p> -->
+    <section id="product1" class="section-p1">
+        <h1>Women's Jewellery</h1>
+        <a href="./productDetail/products.html?id=1">
+            <div class="pro-container">
+                <div class="pro" data-price="949">
+                    <img src="img/j01.jpg" alt="">
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>ZENEME</span>
+                        <h5>Set of 2 Rhodium-Plated American Diamond Studded Bangle</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-949</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </a>
+        </div>
+        <div class="pro" data-price="319">
+            <a href="./productDetail/products.html?id=2">
+                <img src="img/j02.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Atasi International</span>
+                    <h5>Atasi International Americam Diamond Crystal Necklace</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-319</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="400">
+            <a href="./productDetail/products.html?id=3">
+                <img src="img/j03.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Trink</span>
+                    <h5>Rhodium-Plated American Diamond Crystal Earrings</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-400</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="599">
+            <a href="./productDetail/products.html?id=4">
+                <img src="img/j04.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Astrotalk</span>
+                    <h5>Dhan Yog Bracelet</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-599</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <a href="./productDetail/products.html?id=01">
+            <!-- <p>Summer Collection New Morden Design</p> -->
+            <div class="pro-container">
+                <div class="pro" data-price="685">
+                    <img src="img/j05.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>KARATCART</span>
+                        <h5>Set of 2 Gold-Plated Kundan Studded Bangles</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-685</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </a>
+        </div>
+        <div class="pro" data-price="540">
+            <a href="./productDetail/products.html?id=02">
+                <img src="img/j06.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Atasi International</span>
+                    <h5>Atasi International Silver-Plated Crystal Necklace</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-540</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="650">
+            <a href="./productDetail/products.html?id=03">
+                <img src="img/j07.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Atasi International</span>
+                    <h5>Atasi International Silver-Plated Crystal Necklace</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-650</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="18662">
+            <a href="./productDetail/products.html?id=04">
+                <img src="img/j08.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Malabar Gold</span>
+                    <h5>Infinity For Life Diamond Ring</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-18662</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Filter Script -->
+    <script>
+        function filterByPrice() {
+            const selectedRange = document.getElementById("priceFilter").value;
+            const allProducts = document.querySelectorAll(".pro");
+
+            allProducts.forEach(product => {
+                const price = parseInt(product.getAttribute("data-price"));
+                let show = false;
+
+                if (selectedRange === "all") {
+                    show = true;
+                } else {
+                    const [min, max] = selectedRange.split("-").map(Number);
+                    show = price >= min && price <= max;
+                }
+
+                product.style.display = show ? "block" : "none";
+            });
+        }
+    </script>
+
+</body>
+
+</html>

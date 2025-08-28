@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Price Filter -->
+    <section class="section-p1">
+        <h2>Filter by Price</h2>
+        <label for="priceFilter">Select price range:</label>
+        <select id="priceFilter">
+<option value="all">All</option>
+<option value="0-8999">Below ₹9000</option>
+<option value="15000-42000">₹15000 - ₹42000</option>
+<option value="45000-65000">Above ₹42000</option>
+</select>
+        <button onclick="filterByPrice()">Search</button>
+    </section>
+
+
+    <section id="product1" class="section-p1">
+        <!-- <p>Summer Collection New Morden Design</p> -->
+        <h1>Mobile's</h1>
+        <a href="./productDetail/products.html?id=1">
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/m01.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>OPPO F29 Pro</span>
+                        <h5>Marble White/12+256GB</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-49500</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </a>
+        </div>
+        <div class="pro" data-price="7999">
+            <a href="./productDetail/products.html?id=2">
+                <img src="img/m02.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>VIVO V19e</span>
+                    <h5>64GB, 4GB RAM, Titanium Silver</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-7999</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="40999">
+            <a href="./productDetail/products.html?id=3">
+                <img src="img/m03.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>VIVO V50</span>
+                    <h5>5G Starry Night,12Gb Ram,512GB Storage</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-40999</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="17998">
+            <a href="./productDetail/products.html?id=4">
+                <img src="img/m04.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>OnePlus NORD</span>
+                    <h5>CE4 Lite 5G MegaBlue,8GB RAM,128GB Storage</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-17998</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <a href="./productDetail/products.html?id=01">
+            <!-- <p>Summer Collection New Morden Design</p> -->
+            <div class="pro-container">
+                <div class="pro" data-price="38000">
+                    <img src="img/m05.jpg" alt="" />
+                    <a href="#"></a>
+                    <div class="des">
+                        <span>OPPO A3x 5G</span>
+                        <h5>Starlight White,128GB,4GB RAM</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>price-38000</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </a>
+        </div>
+        <div class="pro" data-price="8499">
+            <a href="./productDetail/products.html?id=02">
+                <img src="img/m06.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>Redmi A4 5G</span>
+                    <h5>Sparkle Purple,4GB RAM, 64GB Storage</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-8499</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="17998">
+            <a href="./productDetail/products.html?id=03">
+                <img src="img/m07.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>OnePlus NORD</span>
+                    <h5>CE4 Lite 5,Ultra Orange,8GB RAM,128GB Sorage</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-17998</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        <div class="pro" data-price="61747">
+            <a href="./productDetail/products.html?id=04">
+                <img src="img/m08.jpg" alt="" />
+                <a href="#"></a>
+                <div class="des">
+                    <span>TCL 50 Pro</span>
+                    <h5>NXTAPER 8512GB 5G Midnight Blue T803D-2CLCA112</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>price-61747</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Filter Script -->
+    <script>
+        function filterByPrice() {
+            const selectedRange = document.getElementById("priceFilter").value;
+            const allProducts = document.querySelectorAll(".pro");
+
+            allProducts.forEach(product => {
+                const price = parseInt(product.getAttribute("data-price"));
+                let show = false;
+
+                if (selectedRange === "all") {
+                    show = true;
+                } else {
+                    const [min, max] = selectedRange.split("-").map(Number);
+                    show = price >= min && price <= max;
+                }
+
+                product.style.display = show ? "block" : "none";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
